@@ -35,3 +35,8 @@ def test_short_input():
     text = '9g'
     number = get_number(text)
     assert number == 99
+
+def test_get_line_number_5():
+    text = 'fivefourcktdqsdlvpdq1eightwolc'
+    num = get_number(text)
+    assert num == 52

@@ -1,4 +1,4 @@
-from day1 import get_number, get_total
+from day1_part1 import get_number, get_total
 
 def test_total_142():
     list_input = ['1abc2', 'pqr3stu8vwx', 'a1b2c3d4e5f', 'treb7uchet']
@@ -24,3 +24,4 @@ def test_get_line_number_4():
     text = 'qfrpksmzzvfkddtfh6838'
     num = get_number(text)
     assert num == 68
+

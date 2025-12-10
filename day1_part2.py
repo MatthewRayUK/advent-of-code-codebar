@@ -1,6 +1,6 @@
 import re
 def get_number(input: str) -> int:
-    result = re.findall(r"(one|two|three|four|five|six|seven|eight|nine|\d)", input)
+    result = re.findall(r"(?=(one|two|three|four|five|six|seven|eight|nine|\d))", input)
     numbers_dict = {
         'one': 1, 
         'two': 2,
@@ -27,7 +27,6 @@ def get_number(input: str) -> int:
 def get_total(inputs: list) -> int:
     total = 0
     for line in inputs:
-        print(get_number(line))
         total += get_number(line)
     return total
 
